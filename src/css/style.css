@@ -1,0 +1,57 @@
+/* # Global+General # */
+
+:root {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+
+    /* # Color Palette # */
+
+    --clr-primary: #3d54e5;
+    --clr-secondary: #fc991e;
+    --clr-tertiary: #3bcaa7;
+    --clr-background: #fefffe;
+    --clr-font: #1f1f1f;
+    --clr-font-medium: #8a898a;
+    --clr-font-light: #babbbc;
+    --clr-font-surface: #9c9da1;
+    --clr-font-opposite: #e0e0e0;
+    --clr-surface-light: #f3f2f3;
+    --clr-surface-medium: #8a898a;
+    --clr-surface-dark: #1c1b1c;
+    --clr-surface-dark-filled: #121112;
+    --clr-surface-primary: #f9f6fc;
+
+    /* # Font # */
+
+    --fnt-plain: "Karla", Helvetica, sans-serif;
+    --fnt-headline: "Lora", "Karla", Helvetica, sans-serif;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: var(--clr-font);
+    background-color: var(--clr-background);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--fnt-plain);
+}
+
+::selection {
+    background-color: var(--clr-primary);
+}
+
+
+:focus {
+    outline: 3.5px solid var(--clr-primary);
+}
+
+h1,
+h2 {
+    font-family: var(--fnt-headline);
+}
