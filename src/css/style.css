@@ -25,7 +25,7 @@
     /* # Font # */
 
     --fnt-plain: "Karla", Helvetica, sans-serif;
-    --fnt-headline: "Lora", "Karla", Helvetica, sans-serif;
+    --fnt-headline: "Magneta Condensed", "Lora", Helvetica, sans-serif;
 
 }
 
@@ -54,4 +54,84 @@ body {
 h1,
 h2 {
     font-family: var(--fnt-headline);
+}
+
+/* # Navigation # */
+
+#navigation {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    border-bottom: 3px solid var(--clr-surface-light);
+}
+
+#navigation>section {
+    width: 100%;
+    display: flex;
+    justify-content: unset;
+    align-items: center;
+}
+
+#navigation>section:first-of-type {
+    height: 100px;
+    padding-top: .35rem;
+}
+
+#navigation>section:last-of-type {
+    height: 42.5px;
+}
+
+#navigation .logo {
+    width: auto;
+    height: 45px;
+    position: absolute;
+    left: 6%;
+}
+
+#navigation h1 {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#navigation div {
+    position: absolute;
+    right: 7.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+}
+
+#navigation div img {
+    width: auto;
+    height: 20px;
+}
+
+#navigation ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 1.5rem;
+}
+
+#navigation ul>li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#navigation ul>li>a {
+    height: 42.5px;
+    display: block;
+    color: var(--clr-font);
+    text-decoration: none;
+    font-size: 1.075rem;
+}
+
+#navigation ul>li>a.active {
+    font-weight: 700;
+    border-bottom: 3.25px solid var(--clr-font);
 }

@@ -182,6 +182,78 @@
         url('./../fonts/karla/karla-v32-latin-800italic.svg#Karla') format('svg');
 }
 
+/* # Import Font "Magneta Condensed" # */
+
+@font-face {
+    font-family: 'Magneta Condensed';
+    src: url('./../fonts/magneta-condensed/Magneta-Book.woff2') format('woff2'),
+        url('./../fonts/magneta-condensed/Magneta-Book.woff') format('woff'),
+        url('./../fonts/magneta-condensed/Magneta-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magneta Condensed';
+    src: url('./../fonts/magneta-condensed/Magneta-BookItalic.woff2') format('woff2'),
+        url('./../fonts/magneta-condensed/Magneta-BookItalic.woff') format('woff'),
+        url('./../fonts/magneta-condensed/Magneta-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magneta Condensed';
+    src: url('./../fonts/magneta-condensed/Magneta-Black.woff2') format('woff2'),
+        url('./../fonts/magneta-condensed/Magneta-Black.woff') format('woff'),
+        url('./../fonts/magneta-condensed/Magneta-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magneta Condensed';
+    src: url('./../fonts/magneta-condensed/Magneta-BoldItalic.woff2') format('woff2'),
+        url('./../fonts/magneta-condensed/Magneta-BoldItalic.woff') format('woff'),
+        url('./../fonts/magneta-condensed/Magneta-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magneta Condensed';
+    src: url('./../fonts/magneta-condensed/Magneta-SemiBoldItalic.woff2') format('woff2'),
+        url('./../fonts/magneta-condensed/Magneta-SemiBoldItalic.woff') format('woff'),
+        url('./../fonts/magneta-condensed/Magneta-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magneta Condensed';
+    src: url('./../fonts/magneta-condensed/Magneta-Medium.woff2') format('woff2'),
+        url('./../fonts/magneta-condensed/Magneta-Medium.woff') format('woff'),
+        url('./../fonts/magneta-condensed/Magneta-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Magneta Condensed';
+    src: url('./../fonts/magneta-condensed/Magneta-Thin.woff2') format('woff2'),
+        url('./../fonts/magneta-condensed/Magneta-Thin.woff') format('woff'),
+        url('./../fonts/magneta-condensed/Magneta-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* # Import Font "Lora" # */
 
 @font-face {
