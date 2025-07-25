@@ -31,7 +31,7 @@
 
 body {
     width: 100%;
-    height: 100%;
+    height: 10300000%;
     margin: 0;
     color: var(--clr-font);
     background-color: var(--clr-background);
@@ -56,12 +56,22 @@ h2 {
     font-family: var(--fnt-headline);
 }
 
+main {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    top: calc(100px + 42.5px + .35rem);
+}
+
 /* # Navigation # */
 
 #navigation {
     width: 100%;
     height: auto;
     position: fixed;
+    z-index: 98;
+    background-color: var(--clr-background);
     border-bottom: 3px solid var(--clr-surface-light);
 }
 
@@ -134,4 +144,86 @@ h2 {
 #navigation ul>li>a.active {
     font-weight: 700;
     border-bottom: 3.25px solid var(--clr-font);
+}
+
+@media (max-height: 650px) {
+
+    #navigation>section:first-of-type {
+        height: 75px;
+        scale: 0.85;
+    }
+
+    #navigation>section:last-of-type {
+        height: 32.5px;
+        scale: 0.85;
+        margin-top: .3rem;
+    }
+
+    #navigation>section:last-of-type a {
+        height: 32.5px;
+    }
+
+    main {
+        top: calc((100px + 32.5px) * 0.85 + .3rem);
+    }
+
+    #slideshow img {
+        max-height: 450px;
+    }
+
+}
+
+
+/* ### MAIN #### */
+
+
+/* # Slideshow # */
+
+#slideshow {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.slides,
+.slides>div,
+.slides>div>.img-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides>div>.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides>div>.img-container>.filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(180deg, transparent 40%, #000000b2 100%);
+}
+
+.slides>div>.description {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 3;
+    color: var(--clr-font-opposite);
+}
+
+.slides>div>.description>h1 {
+    font-size: 2.15rem;
+    margin-bottom: .35rem;
+}
+
+.slides>div>.description>p {
+    width: 62.5%;
 }
