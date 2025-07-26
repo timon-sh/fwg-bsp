@@ -70,39 +70,54 @@
 
     </nav>
 
-    <!-- ### MAIN ### -->
+    <!-- # Slideshow # -->
 
-    <main>
+    <header id="slideshow">
 
-        <!-- # Slideshow # -->
+        <section class="slides">
 
-        <header id="slideshow">
+            <div>
 
-            <section class="slides">
+                <div class="img-container">
+                    <div class="filter"></div>
+                    <img src="./src/img/slides/1.png" alt="1">
+                </div>
 
-                <div>
+                <div class="description">
 
-                    <div class="img-container">
-                        <div class="filter"></div>
-                        <img src="./src/img/slides/1.png" alt="1">
-                    </div>
-
-                    <div class="description">
-
-                        <h1>Herzlich Willkommen!</h1>
-                        <p>
-                            Wir freuen uns sehr, dass Sie Interesse an der kommunalpolitischen Arbeit unserer
-                            Wählergemeinschaft
-                            haben. Die Themen der Gemeinde Gleichen lassen sich nicht mit Parteiprogrammen lösen.
-                        </p>
-
-                    </div>
+                    <h1>Herzlich Willkommen!</h1>
+                    <p>
+                        Wir freuen uns sehr, dass Sie Interesse an der kommunalpolitischen Arbeit unserer
+                        Wählergemeinschaft
+                        haben. Die Themen der Gemeinde Gleichen lassen sich nicht mit Parteiprogrammen lösen.
+                    </p>
 
                 </div>
 
-            </section>
+            </div>
 
-        </header>
+        </section>
+
+        <section class="controls">
+
+            <button type="button" onclick="slide(1)" class="active"></button>
+            <button type="button" onclick="slide(2)"></button>
+            <button type="button" onclick="slide(3)"></button>
+            <button type="button" onclick="slide(4)"></button>
+            <button type="button" onclick="slide(5)"></button>
+
+        </section>
+
+    </header>
+
+
+    <!-- ### MAIN ### -->
+
+
+    <main>
+
+
+        
 
 
     </main>
